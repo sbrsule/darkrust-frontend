@@ -14,7 +14,7 @@ export default function LandingPage() {
             credentials: "include",
         })
         .then((res) => {
-            if (res < 400) {
+            if (res.status < 400) {
                 navigate('/home');
             } 
         })

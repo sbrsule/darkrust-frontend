@@ -43,7 +43,7 @@ export default function Body() {
                 body:  JSON.stringify({"username": username, "password": password}) 
             })
             .then((res) => {
-                if(res < 400) {
+                if(res.status < 400) {
                     navigate("/home");
                 }
             })
@@ -56,6 +56,7 @@ export default function Body() {
                 <h1>A forum all about Rust-Lang</h1>
             </div>
             <div className="register-cont">
+                <h2>Sign Up Now</h2>
                 <div className="register-inner-cont">
                     <div className="register-input-cont">
                         <h3>Username</h3>

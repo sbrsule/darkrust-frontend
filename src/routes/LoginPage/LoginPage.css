@@ -1,0 +1,39 @@
+.LoginBody {
+    background-color: black;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.login-inputs {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.login-inner-cont input {
+    text-decoration: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+}
+
+.login-inner-cont input:focus {
+    outline: none;
+}
