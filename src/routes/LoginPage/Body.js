@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Body() {
@@ -6,8 +6,21 @@ export default function Body() {
     const [password, setPassword] = useState("");
     const [usernameError, setUsernameError] = useState("");
     const [passwordError, setPasswordError] = useState("");
+    const [loggedIn, setLogin] = useState(false);
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        fetch('http://localhost:8080/test', {
+            method: "POST",
+            credentials: "include",
+        })
+        .then((res) => {
+            if(res.status < 400) {
+                navigate("/home");
+            }
+        })
+    }, [])
 
     const login = () => {
         if (username !== "" && password !== "") {

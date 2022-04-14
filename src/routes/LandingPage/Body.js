@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
@@ -40,6 +40,7 @@ export default function Body() {
             fetch('http://localhost:8080/register', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
+                credentials: "include",
                 body:  JSON.stringify({"username": username, "password": password}) 
             })
             .then((res) => {
@@ -49,6 +50,18 @@ export default function Body() {
             })
         }
     }
+
+    useEffect(() => {
+        fetch('http://localhost:8080/test', {
+            method: "POST",
+            credentials: "include",
+        })
+        .then((res) => {
+            if(res.status < 400) {
+                navigate("/home");
+            }
+        })
+    }, [])
 
     return (
         <body className='LandBody'>

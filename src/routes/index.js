@@ -7,6 +7,7 @@ import {
 import LandingPage from './LandingPage/LandingPage';
 import LoginPage from './LoginPage/LoginPage';
 import HomePage from './HomePage/HomePage';
+import AccountPage from './AccountPage/AccountPage';
 
 export default function myRoutes() {
     return (
@@ -15,6 +16,7 @@ export default function myRoutes() {
                 <Route path="/" element={<LandingPage/>}/>
                 <Route path="/login" element={<LoginPage/>}/>
                 <Route path="/home" element={<HomePage/>}/>
+                <Route path="/account" element={<AccountPage/>}/>
             </Routes>
         </BrowserRouter>      
     )
