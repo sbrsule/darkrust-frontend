@@ -1,0 +1,46 @@
+.HomeBody {
+    background-color: black;
+    min-height: calc(100vh - var(--header-height));
+    padding: 50px 0;
+}
+
+.body-text, .title-text {
+    resize: none;
+    width: 500px;
+    border: 2px solid #9305ff;
+    background-color: #0d0d0d;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.body-text {
+    height: 150px;
+}
+
+.title-text {
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.post-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.post-btn {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #00b7ff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #00b7ff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

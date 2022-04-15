@@ -1,11 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import Header from "./Header.js"
+import "./HomePage.css";
+import Header from "./Header.js";
+import Body from "./Body.js";
 
 export default function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        fetch("http://localhost:8080/posts", {
+            method: "GET",
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
         fetch("http://localhost:8080/test", {
             method: "POST",
             credentials: "include",
@@ -20,6 +29,7 @@ export default function HomePage() {
     return (
         <main>
             <Header/>
+            <Body />
         </main>
     )
 }
