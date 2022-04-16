@@ -20,11 +20,23 @@
 }
 
 .post-body {
-    height: 150px;
+    max-height: 155px;
     padding: 10px 20px;
     border-bottom: 2px solid #00b7ff;
+    background-color: #0d0d0d;
+    display: flex;
 }
 
 .post-bottom {
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reply-icon {
+    margin-right: 10px;
+}
+
+.posters {
+    color: red;
 }

@@ -15,6 +15,7 @@ export default function InputPost() {
             .then((res) => {
                 if(res.status < 400) {
                     console.log("success!");
+                    window.location.reload(true);
                 }
                 else {
                     console.log("unable to post");
