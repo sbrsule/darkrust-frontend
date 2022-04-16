@@ -1,0 +1,4 @@
+.PostBody {
+    min-height: calc(100vh - var(--header-height));
+    background-color: black;
+}

@@ -1,0 +1,30 @@
+.post-cont * {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.post-cont > a {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #00b7ff;
+}
+
+.post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid #00b7ff;
+}
+
+.post-body {
+    height: 150px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #00b7ff;
+}
+
+.post-bottom {
+    padding: 10px 20px;
+}
