@@ -6,7 +6,7 @@ export default function SignOutBtn() {
     const navigate = useNavigate();
 
     const logout = () => {
-        fetch("http://localhost:8080/logout", {
+        fetch("https://api.darkrust.org/logout", {
             method: "POST",
             credentials: "include",
         })
