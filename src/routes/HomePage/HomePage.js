@@ -8,7 +8,7 @@ export default function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://api.darkrust.org/posts", {
+        fetch("https://api.darkrust.org/posts", {
             method: "GET",
         })
         .then(res => res.json())
