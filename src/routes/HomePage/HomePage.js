@@ -15,7 +15,7 @@ export default function HomePage() {
         .then(data => {
             console.log(data);
         })
-        fetch("http://api.darkrust.org/test", {
+        fetch("https://api.darkrust.org/test", {
             method: "POST",
             credentials: "include",
         })

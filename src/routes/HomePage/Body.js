@@ -5,7 +5,7 @@ import Post from "../../misc/Post.jsx";
 export default function Body() {
     const [post, setPost] = useState([]);
     useEffect(() => {
-        fetch('http://api.darkrust.org/posts', {
+        fetch('https://api.darkrust.org/posts', {
             method: "GET",
         })
         .then(res => {

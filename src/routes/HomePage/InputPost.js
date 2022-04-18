@@ -6,7 +6,7 @@ export default function InputPost() {
 
     const createPost = () => {
         if(body !== "" && title !== "") {
-            fetch("http://localhost:8080/create_post", {
+            fetch("https://api.darkrust.org/create_post", {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 credentials: "include",

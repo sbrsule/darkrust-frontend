@@ -8,7 +8,7 @@ export default function LandingPage() {
     const navigate = useNavigate();
     useEffect(() => {
         const goHome = () => navigate('/home');
-        fetch("http://api.darkrust.org/test", {
+        fetch("https://api.darkrust.org/test", {
             method: "POST",
             credentials: "include",
         })
