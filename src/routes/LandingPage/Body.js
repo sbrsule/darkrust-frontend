@@ -37,7 +37,7 @@ export default function Body() {
         const goodUsername = checkUsername(username, setUsernameError)
         const goodPasswords = checkPasswords(password, confirmPassword, setPasswordError)
         if (goodUsername && goodPasswords) {
-            fetch('http://localhost:8080/register', {
+            fetch('http://api.darkrust.org/register', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 credentials: "include",
@@ -52,7 +52,7 @@ export default function Body() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:8080/test', {
+        fetch('http://api.darkrust.org/test', {
             method: "POST",
             credentials: "include",
         })

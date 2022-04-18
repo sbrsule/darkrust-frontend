@@ -11,7 +11,7 @@ export default function Body() {
     const [replies, setReplies] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8080/post/${id}`, {
+        fetch(`http://api.darkrust.org/post/${id}`, {
             method: "GET",
         })
         .then(res => {
@@ -22,7 +22,7 @@ export default function Body() {
             setReadyPost(true)
         })
 
-        fetch(`http://localhost:8080/replies/${id}`, {
+        fetch(`http://api.darkrust.org/replies/${id}`, {
             method: "GET",
         })
         .then(res => {

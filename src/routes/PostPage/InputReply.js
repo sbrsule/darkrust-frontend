@@ -9,7 +9,7 @@ export default function InputReply() {
 
     const createPost = () => {
         if(body !== "") {
-            fetch(`http://localhost:8080/create_reply/${id}`, {
+            fetch(`http://api.darkrust.org/create_reply/${id}`, {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 credentials: "include",

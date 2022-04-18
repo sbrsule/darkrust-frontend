@@ -11,7 +11,7 @@ export default function Body() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:8080/test', {
+        fetch('http://api.darkrust.org/test', {
             method: "POST",
             credentials: "include",
         })
@@ -24,7 +24,7 @@ export default function Body() {
 
     const login = () => {
         if (username !== "" && password !== "") {
-            fetch('http://localhost:8080/login', {
+            fetch('http://api.darkrust.org/login', {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 credentials: "include",

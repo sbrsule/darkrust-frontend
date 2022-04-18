@@ -8,14 +8,14 @@ export default function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:8080/posts", {
+        fetch("http://api.darkrust.org/posts", {
             method: "GET",
         })
         .then(res => res.json())
         .then(data => {
             console.log(data);
         })
-        fetch("http://localhost:8080/test", {
+        fetch("http://api.darkrust.org/test", {
             method: "POST",
             credentials: "include",
         })
