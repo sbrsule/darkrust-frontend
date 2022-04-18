@@ -8,7 +8,7 @@ export default function Reply(props) {
     const title = props.title;
 
     useEffect(() => {
-        fetch("http://localhost:8080/get_username", {
+        fetch("https://api.darkrust.org/get_username", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({"id": user_id})
