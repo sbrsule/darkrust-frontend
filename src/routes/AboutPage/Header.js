@@ -10,9 +10,6 @@ export default function Header() {
                 <Link to="/home">
                     <button className="login-btn">Home</button>
                 </Link>
-                <Link to="/about">
-                    <button className="login-btn">About</button>
-                </Link>
                 <SignOutBtn />
             </div>
         </div>

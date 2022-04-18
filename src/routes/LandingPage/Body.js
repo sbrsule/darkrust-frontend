@@ -66,7 +66,7 @@ export default function Body() {
     return (
         <body className='LandBody'>
             <div className="about-cont">
-                <h1>A forum all about Rust-Lang</h1>
+                <h1>A forum written in Rust and React</h1>
             </div>
             <div className="register-cont">
                 <h2>Sign Up Now</h2>

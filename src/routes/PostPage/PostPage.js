@@ -9,6 +9,7 @@ export default function PostPage() {
     return (
         <main> 
             <Header />
+            <Body />
         </main>
     )
 }

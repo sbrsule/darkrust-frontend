@@ -1,4 +1,28 @@
 .PostBody {
     min-height: calc(100vh - var(--header-height));
     background-color: black;
+    padding: 50px 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.reply-input-cont {
+    margin-top: 50px;
+}
+
+.reply-cont {
+    margin-top: 20px;
+}
+.reply-cont > a {
+    border: 2px solid white;
+}
+
+.reply-top {
+    border: 2px solid white;
+}
+
+.reply-bottom {
+    border: 2px solid white;
 }

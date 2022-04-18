@@ -7,9 +7,6 @@ export default function Header() {
         <div className="LandHeader">
             <h2 className="Logo">DarkRust</h2>
             <div className="User-btns">
-                <Link to="/account">
-                    <button className="login-btn">Account</button>
-                </Link>
                 <Link to="/about">
                     <button className="login-btn">About</button>
                 </Link>
